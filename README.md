@@ -45,18 +45,36 @@ El proyecto destaca por su arquitectura orientada a la mantenibilidad, uso de co
 ```bash
 # Clonar el proyecto
 git clone [URL_DEL_REPOSITORIO]
-
-# Dar permisos si es necesario
-chmod -R 777 app_ef/tmp app_ef/logs
+cd ProyectoFinal-TecWeb2
 ```
 
-**Paso 2: Restaurar Base de Datos**
+**Paso 2: Configuración de Directorios y Docker Compose (¡Importante!)**
+El proyecto se encuentra subido en la raíz del repositorio de GitHub (estructura plana). Puedes trabajar con él de dos maneras:
+- **Estructura Plana (Recomendado):** El código fuente de CakePHP se encuentra en la raíz del proyecto junto con el `docker-compose.yml`. Para trabajar así, asegúrate que en tu `docker-compose.yml` el volumen apunte a `.`:
+  ```yaml
+  volumes:
+    - .:/var/www/html:Z
+  ```
+  Otorga permisos a las carpetas temporales:
+  `chmod -R 777 tmp logs`
+
+- **Trabajando desde una Subcarpeta (app_ef):** Si prefieres colocar el código fuente dentro de una subcarpeta llamada `app_ef` (como se trabajó originalmente):
+  1. Crea la carpeta `app_ef` y mueve todas las carpetas del código (src, config, vendor, etc.) dentro de ella (excepto el Dockerfile y docker-compose.yml).
+  2. Modifica tu `docker-compose.yml` para apuntar el volumen a la subcarpeta:
+  ```yaml
+  volumes:
+    - ./app_ef:/var/www/html:Z
+  ```
+  3. Otorga permisos a las carpetas temporales:
+  `chmod -R 777 app_ef/tmp app_ef/logs`
+
+**Paso 3: Restaurar Base de Datos**
 Asegúrese de volcar el archivo `db_postgres.sql` en su servidor de PostgreSQL dentro de una base de datos nombrada `db_ef1`.
 
-**Paso 3: Variables y Configuración**
-Si los contenedores pertenecen a redes distintas, configure la IP o el host correcto en `/app_ef/config/app_local.php` para apuntar a su PostgreSQL.
+**Paso 4: Variables y Configuración**
+Configure la IP o el host correcto en `config/app_local.php` (o `app_ef/config/app_local.php` si usa subcarpeta) para apuntar a su PostgreSQL.
 
-**Paso 4: Levantar la Arquitectura Dockerizada**
+**Paso 5: Levantar la Arquitectura Dockerizada**
 Levante la imagen Apache-PHP desde el archivo raíz del repositorio:
 ```bash
 docker-compose up -d --build

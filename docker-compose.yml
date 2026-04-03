@@ -1,0 +1,19 @@
+services:
+  # Servicio Web (Apache + PHP 8.2) para el Proyecto Final
+  web:
+    build: .
+    container_name: final_project_web
+    ports:
+      - "8765:80"
+    volumes:
+      - ./app_ef:/var/www/html:Z
+    # Como ya tienes otro contenedor de MariaDB, conéctalo aquí:
+    environment:
+      # Puedes usar la IP del host o el nombre del contenedor si están en la misma red
+    # Si tus contenedores están en una red externa, agrégala aquí:
+    # networks:
+    #   - mi_red_existente
+
+# networks:
+#   mi_red_existente:
+#     external: true

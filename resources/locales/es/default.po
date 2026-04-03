@@ -1,0 +1,170 @@
+msgid "Monedas"
+msgstr "Monedas"
+
+msgid "New Moneda"
+msgstr "Nueva Moneda"
+
+msgid "Edit Moneda"
+msgstr "Editar Moneda"
+
+msgid "Delete Moneda"
+msgstr "Eliminar Moneda"
+
+msgid "List Monedas"
+msgstr "Lista de Monedas"
+
+msgid "Delete"
+msgstr "Eliminar"
+
+msgid "Are you sure you want to delete # {0}?"
+msgstr "¿Está seguro de que desea eliminar # {0}?"
+
+msgid "Name"
+msgstr "Nombre"
+
+msgid "Code"
+msgstr "Código"
+
+msgid "Symbol"
+msgstr "Símbolo"
+
+msgid "Country"
+msgstr "País"
+
+msgid "Exchange Rate"
+msgstr "Tasa de Cambio"
+
+msgid "Active"
+msgstr "Activa"
+
+msgid "Created"
+msgstr "Creado"
+
+msgid "Modified"
+msgstr "Modificado"
+
+msgid "Actions"
+msgstr "Acciones"
+
+msgid "The moneda has been saved."
+msgstr "La moneda ha sido guardada."
+
+msgid "The moneda could not be saved. Please, try again."
+msgstr "La moneda no pudo ser guardada. Por favor, intente de nuevo."
+
+msgid "The moneda has been deleted."
+msgstr "La moneda ha sido eliminada."
+
+msgid "The moneda could not be deleted. Please, try again."
+msgstr "La moneda no pudo ser eliminada. Por favor, intente de nuevo."
+
+msgid "Users"
+msgstr "Usuarios"
+
+msgid "New User"
+msgstr "Nuevo Usuario"
+
+msgid "Edit User"
+msgstr "Editar Usuario"
+
+msgid "Delete User"
+msgstr "Eliminar Usuario"
+
+msgid "List Users"
+msgstr "Lista de Usuarios"
+
+msgid "First Name"
+msgstr "Nombre"
+
+msgid "Last Name"
+msgstr "Apellido"
+
+msgid "Email"
+msgstr "Correo Electrónico"
+
+msgid "Password"
+msgstr "Contraseña"
+
+msgid "Language"
+msgstr "Idioma"
+
+msgid "Role"
+msgstr "Rol"
+
+msgid "Status"
+msgstr "Estado"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "View"
+msgstr "Ver"
+
+msgid "Edit"
+msgstr "Editar"
+
+msgid "Search (Name, Code, Country)"
+msgstr "Buscar (Nombre, Código, País)"
+
+msgid "e.g. Dollar, USD, USA"
+msgstr "Ej: Dólar, USD, EE.UU."
+
+msgid "Any"
+msgstr "Cualquiera"
+
+msgid "Registration Date"
+msgstr "Fecha de Registro"
+
+msgid "Filter"
+msgstr "Filtrar"
+
+msgid "Clear"
+msgstr "Limpiar"
+
+msgid "Active"
+msgstr "Activa"
+
+msgid "Inactive"
+msgstr "Inactiva"
+
+msgid "Yes"
+msgstr "Sí"
+
+msgid "No"
+msgstr "No"
+
+msgid "Administrador"
+msgstr "Administrador"
+
+msgid "Usuario"
+msgstr "Usuario"
+
+msgid "Login"
+msgstr "Entrar"
+
+msgid "example@email.com"
+msgstr "ejemplo@correo.com"
+
+msgid "Don't have an account?"
+msgstr "¿No tienes una cuenta?"
+
+msgid "Register Here"
+msgstr "Regístrate aquí"
+
+msgid "Submit"
+msgstr "Guardar"
+
+msgid "first"
+msgstr "primero"
+
+msgid "previous"
+msgstr "anterior"
+
+msgid "next"
+msgstr "siguiente"
+
+msgid "last"
+msgstr "último"
+
+msgid "Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total"
+msgstr "Página {{page}} de {{pages}}, mostrando {{current}} registros de {{count}}"

@@ -1,0 +1,167 @@
+msgid "Monedas"
+msgstr "Currencies"
+
+msgid "New Moneda"
+msgstr "New Currency"
+
+msgid "Edit Moneda"
+msgstr "Edit Currency"
+
+msgid "Delete Moneda"
+msgstr "Delete Currency"
+
+msgid "List Monedas"
+msgstr "List Currencies"
+
+msgid "Delete"
+msgstr "Delete"
+
+msgid "Are you sure you want to delete # {0}?"
+msgstr "Are you sure you want to delete # {0}?"
+
+msgid "Name"
+msgstr "Name"
+
+msgid "Code"
+msgstr "Code"
+
+msgid "Symbol"
+msgstr "Symbol"
+
+msgid "Country"
+msgstr "Country"
+
+msgid "Exchange Rate"
+msgstr "Exchange Rate"
+
+msgid "Active"
+msgstr "Active"
+
+msgid "Created"
+msgstr "Created"
+
+msgid "Modified"
+msgstr "Modified"
+
+msgid "Actions"
+msgstr "Actions"
+
+msgid "The moneda has been saved."
+msgstr "The currency has been saved."
+
+msgid "The moneda could not be saved. Please, try again."
+msgstr "The currency could not be saved. Please, try again."
+
+msgid "The moneda has been deleted."
+msgstr "The currency has been deleted."
+
+msgid "The moneda could not be deleted. Please, try again."
+msgstr "The currency could not be deleted. Please, try again."
+
+msgid "Users"
+msgstr "Users"
+
+msgid "New User"
+msgstr "New User"
+
+msgid "Edit User"
+msgstr "Edit User"
+
+msgid "Delete User"
+msgstr "Delete User"
+
+msgid "List Users"
+msgstr "List Users"
+
+msgid "First Name"
+msgstr "First Name"
+
+msgid "Last Name"
+msgstr "Last Name"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Password"
+msgstr "Password"
+
+msgid "Language"
+msgstr "Language"
+
+msgid "Role"
+msgstr "Role"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "View"
+msgstr "View"
+
+msgid "Edit"
+msgstr "Edit"
+
+msgid "Search (Name, Code, Country)"
+msgstr "Search (Name, Code, Country)"
+
+msgid "e.g. Dollar, USD, USA"
+msgstr "e.g. Dollar, USD, USA"
+
+msgid "Any"
+msgstr "Any"
+
+msgid "Registration Date"
+msgstr "Registration Date"
+
+msgid "Filter"
+msgstr "Filter"
+
+msgid "Clear"
+msgstr "Clear"
+
+msgid "Inactive"
+msgstr "Inactive"
+
+msgid "Yes"
+msgstr "Yes"
+
+msgid "No"
+msgstr "No"
+
+msgid "Administrador"
+msgstr "Administrator"
+
+msgid "Usuario"
+msgstr "User"
+
+msgid "Login"
+msgstr "Login"
+
+msgid "example@email.com"
+msgstr "example@email.com"
+
+msgid "Don't have an account?"
+msgstr "Don't have an account?"
+
+msgid "Register Here"
+msgstr "Register Here"
+
+msgid "Submit"
+msgstr "Submit"
+
+msgid "first"
+msgstr "first"
+
+msgid "previous"
+msgstr "previous"
+
+msgid "next"
+msgstr "next"
+
+msgid "last"
+msgstr "last"
+
+msgid "Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total"
+msgstr "Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total"

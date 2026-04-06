@@ -17,8 +17,8 @@ return [
      * Development Mode:
      * true: Errors and warnings shown.
      */
-    'debug' => filter_var(env('DEBUG', false), FILTER_VALIDATE_BOOLEAN),
-
+//    'debug' => filter_var(env('DEBUG', false), FILTER_VALIDATE_BOOLEAN),
+    'debug' => true,
     /*
      * Configure basic information about the application.
      *
@@ -174,7 +174,7 @@ return [
      * - `traceFormat` - when logging errors, List of `'array'`, `'points'`, `'shortPoints'`, defaults to `shortPoints`.
      */
     'Error' => [
-        'errorLevel' => E_ALL,
+        'errorLevel' => E_ALL & ~E_USER_DEPRECATED,
         'skipLog' => [],
         'log' => true,
         'trace' => true,

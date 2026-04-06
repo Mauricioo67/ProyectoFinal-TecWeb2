@@ -66,8 +66,8 @@ class UsersController extends AppController
         if ($this->request->is('post')) {
             $user = $this->Users->patchEntity($user, $this->request->getData());
             // Default role is User (2) if not set
-            if (!$user->id_rol) {
-                $user->id_rol = 2;
+            if (!$user->rol) {
+                $user->rol = 2;
             }
             if ($this->Users->save($user)) {
                 $this->Flash->success(__('El usuario ha sido guardado.'));
@@ -82,9 +82,11 @@ class UsersController extends AppController
     {
         $user = $this->Users->get($id, contain: []);
         $currentUser = $this->Authentication->getIdentity();
+        $idRol = $currentUser->get('rol');
+        $idPropio = $currentUser->get('id');
 
-        // Si no es admin y no es su propio perfil
-        if ($currentUser->id_rol != 1 && $currentUser->id != $user->id) {
+        // Si no es admin (rol != 1) y no es su propio perfil (id != id)
+        if ($idRol != 1 && $idPropio != $user->id) {
             $this->Flash->error(__('No tienes permiso para editar este perfil.'));
             return $this->redirect(['action' => 'index']);
         }
@@ -94,9 +96,10 @@ class UsersController extends AppController
             if (empty($data['password'])) {
                 unset($data['password']);
             }
+            $idRol = $currentUser->get('rol');
             // Solo el admin puede cambiar el rol
-            if ($currentUser->id_rol != 1) {
-                unset($data['id_rol']);
+            if ($idRol != 1) {
+                unset($data['rol']);
             }
 
             $user = $this->Users->patchEntity($user, $data);
@@ -113,9 +116,9 @@ class UsersController extends AppController
     {
         $this->request->allowMethod(['post', 'delete']);
         $currentUser = $this->Authentication->getIdentity();
-
+        $idRol = $currentUser->get('rol');
         // Solo el admin puede eliminar usuarios
-        if ($currentUser->id_rol != 1) {
+        if ($idRol != 1) {
             $this->Flash->error(__('Solo los administradores pueden eliminar usuarios.'));
             return $this->redirect(['action' => 'index']);
         }
